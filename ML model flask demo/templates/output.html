@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+
+<head>
+    <title>RESULT</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}" />
+    <noscript>
+        <link rel="stylesheet" href="static/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+
+    <!-- Header -->
+    <header id="header">
+        <h1>
+            <Tbody>The predicted salary of the indivisual is:</Tbody>
+        </h1>
+    </header>
+    <br><br>
+
+    <!--TODO condition -->
+
+    <h2>{{data}}</h2>
+
+
+
+    <footer>
+        <p>
+            <h6><strong>NOTE:</strong></h6> The value may differ as this is just a project made to run flask.
+        </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+</body>
+
+</html>
