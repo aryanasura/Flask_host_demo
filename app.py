@@ -13,8 +13,8 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/predict',methods=['POST','GET'])
-def predict():
+@app.route('/predict_pay',methods=['POST','GET'])
+def predict_pay():
     int_features=[int(x) for x in request.form.values()]
     final=[np.array(int_features)]
     prediction = model.predict(final)
